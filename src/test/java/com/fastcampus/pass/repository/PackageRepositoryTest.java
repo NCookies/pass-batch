@@ -1,6 +1,6 @@
 package com.fastcampus.pass.repository;
 
-import com.fastcampus.pass.config.TestJpaConfig;
+import com.fastcampus.pass.config.TestBatchConfig;
 import com.fastcampus.pass.repository.packaze.PackageEntity;
 import com.fastcampus.pass.repository.packaze.PackageRepository;
 import jakarta.persistence.EntityManager;
@@ -20,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @Slf4j
 @ActiveProfiles("test")
-@Import(TestJpaConfig.class)    // 테스트에서는 Auditing 필드가 자동으로 채워지지 않기 때문에 해당 설정을 불러와야 한다.
+@Import(TestBatchConfig.class)    // 테스트에서는 Auditing 필드가 자동으로 채워지지 않기 때문에 해당 설정을 불러와야 한다.
 @DataJpaTest
 public class PackageRepositoryTest {
 
