@@ -26,5 +26,4 @@ public class PassEntity extends BaseEntity {
     private LocalDateTime startedAt;
     private LocalDateTime endedAt;
     private LocalDateTime expiredAt;
-
 }
