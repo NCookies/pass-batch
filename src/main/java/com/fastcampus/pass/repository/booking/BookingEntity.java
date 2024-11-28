@@ -41,4 +41,9 @@ public class BookingEntity extends BaseEntity {
     @ToString.Exclude
     private PassEntity passEntity;
 
+    // 예약이 종료된 날의 0시 0분 0초로 반환
+    public LocalDateTime getStatisticsAt() {
+        return this.endedAt.withHour(0).withMinute(0).withSecond(0).withNano(0);
+    }
+
 }

@@ -42,6 +42,9 @@ dependencies {
 	// hibernate-types
 	implementation 'io.hypersistence:hypersistence-utils-hibernate-63:3.7.3'
 
+	// csv
+	implementation 'com.opencsv:opencsv:5.7.0'
+
 	// ########## test ##########
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.batch:spring-batch-test'
